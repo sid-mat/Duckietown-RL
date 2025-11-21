@@ -1,0 +1,97 @@
+seed: 0
+experiment_name: Debug
+algo: PPO
+algo_config_files:
+  PPO: config/algo/ppo.yml
+  general: config/algo/general.yml
+env_config: &id001
+  mode: train
+  episode_max_steps: 50
+  resized_input_shape: (84, 84)
+  crop_image_top: true
+  top_crop_divider: 3
+  grayscale_image: false
+  frame_stacking: true
+  frame_stacking_depth: 3
+  motion_blur: false
+  action_type: heading
+  reward_function: posangle
+  distortion: true
+  accepted_start_angle_deg: 4
+  simulation_framerate: 30
+  frame_skip: 1
+  action_delay_ratio: 0.0
+  training_map: multimap1
+  domain_rand: false
+  dynamics_rand: false
+  camera_rand: false
+  frame_repeating: 0.0
+  spawn_obstacles: true
+  obstacles:
+    duckie:
+      density: 0.5
+      static: true
+    duckiebot:
+      density: 0
+      static: false
+  spawn_forward_obstacle: true
+  aido_wrapper: false
+  wandb:
+    project: duckietown-rllib
+  experiment_name: Debug
+  seed: 0
+ray_init_config:
+  num_cpus: 4
+  webui_host: 127.0.0.1
+restore_seed: -1
+restore_experiment_idx: 0
+restore_checkpoint_idx: 0
+debug_hparams:
+  rllib_config:
+    num_workers: 1
+    num_gpus: 0
+  ray_init_config:
+    num_cpus: 1
+    memory: 209715200
+    object_store_memory: 209715200
+    redis_max_memory: 209715200
+    local_mode: true
+inference_hparams:
+  rllib_config:
+    explore: false
+    num_workers: 0
+    num_gpus: 0
+    callbacks: {}
+  ray_init_config:
+    num_cpus: 1
+    memory: 2097152000
+    object_store_memory: 209715200
+    redis_max_memory: 209715200
+    local_mode: true
+timesteps_total: 1000000.0
+rllib_config:
+  num_workers: 3
+  sample_batch_size: 265
+  num_gpus: 1
+  train_batch_size: 2000
+  gamma: 0.99
+  lr: 0.0001
+  monitor: false
+  evaluation_num_episodes: 2
+  evaluation_config:
+    monitor: true
+  seed: 1234
+  lambda: 0.95
+  sgd_minibatch_size: 128
+  vf_loss_coeff: 0.5
+  entropy_coeff: 0.0
+  clip_param: 0.2
+  vf_clip_param: 0.2
+  grad_clip: 0.5
+  env: Duckietown
+  callbacks:
+    on_episode_start: !!python/name:duckietown_utils.rllib_callbacks.on_episode_start ''
+    on_episode_step: !!python/name:duckietown_utils.rllib_callbacks.on_episode_step ''
+    on_episode_end: !!python/name:duckietown_utils.rllib_callbacks.on_episode_end ''
+    on_train_result: !!python/name:duckietown_utils.rllib_callbacks.on_train_result ''
+  env_config: *id001

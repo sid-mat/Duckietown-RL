@@ -1,0 +1,178 @@
+{
+  "checkpoints": [
+    {
+      "trainable_name": "PPO",
+      "trial_id": "6d4de912",
+      "config": {
+        "num_workers": 3,
+        "sample_batch_size": 265,
+        "num_gpus": 1,
+        "train_batch_size": 2000,
+        "gamma": 0.99,
+        "lr": 0.0001,
+        "monitor": false,
+        "evaluation_num_episodes": 2,
+        "evaluation_config": {
+          "monitor": true
+        },
+        "seed": 1234,
+        "lambda": 0.95,
+        "sgd_minibatch_size": 128,
+        "vf_loss_coeff": 0.5,
+        "entropy_coeff": 0.0,
+        "clip_param": 0.2,
+        "vf_clip_param": 0.2,
+        "grad_clip": 0.5,
+        "env": "Duckietown",
+        "callbacks": {
+          "on_episode_start": {
+            "_type": "CLOUDPICKLE_FALLBACK",
+            "value": "80049539000000000000008c206475636b6965746f776e5f7574696c732e726c6c69625f63616c6c6261636b73948c106f6e5f657069736f64655f73746172749493942e"
+          },
+          "on_episode_step": {
+            "_type": "CLOUDPICKLE_FALLBACK",
+            "value": "80049538000000000000008c206475636b6965746f776e5f7574696c732e726c6c69625f63616c6c6261636b73948c0f6f6e5f657069736f64655f737465709493942e"
+          },
+          "on_episode_end": {
+            "_type": "CLOUDPICKLE_FALLBACK",
+            "value": "80049537000000000000008c206475636b6965746f776e5f7574696c732e726c6c69625f63616c6c6261636b73948c0e6f6e5f657069736f64655f656e649493942e"
+          },
+          "on_train_result": {
+            "_type": "CLOUDPICKLE_FALLBACK",
+            "value": "80049538000000000000008c206475636b6965746f776e5f7574696c732e726c6c69625f63616c6c6261636b73948c0f6f6e5f747261696e5f726573756c749493942e"
+          }
+        },
+        "env_config": {
+          "mode": "train",
+          "episode_max_steps": 50,
+          "resized_input_shape": "(84, 84)",
+          "crop_image_top": true,
+          "top_crop_divider": 3,
+          "grayscale_image": false,
+          "frame_stacking": true,
+          "frame_stacking_depth": 3,
+          "motion_blur": false,
+          "action_type": "heading",
+          "reward_function": "lane_distance",
+          "distortion": true,
+          "accepted_start_angle_deg": 4,
+          "simulation_framerate": 30,
+          "frame_skip": 1,
+          "action_delay_ratio": 0.0,
+          "training_map": "multimap1",
+          "domain_rand": false,
+          "dynamics_rand": false,
+          "camera_rand": false,
+          "frame_repeating": 0.0,
+          "spawn_obstacles": false,
+          "obstacles": {
+            "duckie": {
+              "density": 0.5,
+              "static": true
+            },
+            "duckiebot": {
+              "density": 0,
+              "static": false
+            }
+          },
+          "spawn_forward_obstacle": false,
+          "aido_wrapper": false,
+          "wandb": {
+            "project": "duckietown-rllib"
+          },
+          "experiment_name": "Debug",
+          "seed": 0
+        }
+      },
+      "local_dir": "/home/duckie/Duckietown-RL/artifacts/Debug_0000/Nov20_10-55-27",
+      "evaluated_params": {},
+      "experiment_tag": "0",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004953a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65944e8c03706964944e75622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 1,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 3,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "timesteps_total": 1000000.0
+      },
+      "loggers": "8004958e000000000000005d94288c0f7261792e74756e652e6c6f67676572948c094353564c6f6767657294939468018c095442584c6f676765729493948c1e6475636b6965746f776e5f7574696c732e726c6c69625f6c6f6767657273948c1654656e736f72626f617264496d6167654c6f6767657294939468068c1657656967687473416e644269617365734c6f67676572949394652e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {},
+      "last_update_time": -Infinity,
+      "metric_analysis": {},
+      "export_formats": [],
+      "status": "ERROR",
+      "start_time": 1763636160.440042,
+      "logdir": "/home/duckie/Duckietown-RL/artifacts/Debug_0000/Nov20_10-55-27/PPO_0_2025-11-20_10-55-28560yerj4",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 0,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": "PPO",
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 1,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004955f010000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d944b018c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c13657069736f64655f7265776172645f6d65616e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565944e8c06726573756c74947d9475628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68117d9475628c115f626573745f636865636b706f696e7473945d948c0b5f6d656d62657273686970948f9475622e"
+      },
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    }
+  ],
+  "runner_data": {
+    "_global_time_limit": Infinity,
+    "_total_time": 0,
+    "_iteration": 2,
+    "_verbose": true,
+    "_server_port": 4321,
+    "_cached_trial_decisions": {},
+    "_local_checkpoint_dir": "/home/duckie/Duckietown-RL/artifacts/Debug_0000/Nov20_10-55-27",
+    "_remote_checkpoint_dir": null,
+    "_stopper": {
+      "_type": "CLOUDPICKLE_FALLBACK",
+      "value": "80049527000000000000008c107261792e74756e652e73746f70706572948c0b4e6f6f7053746f707065729493942981942e"
+    },
+    "_resumed": false,
+    "_start_time": 1763636128.9508798,
+    "_last_checkpoint_time": 1763636180.2893858,
+    "_checkpoint_period": 10,
+    "_session_str": "2025-11-20_10-55-28",
+    "checkpoint_file": "/home/duckie/Duckietown-RL/artifacts/Debug_0000/Nov20_10-55-27/experiment_state-2025-11-20_10-55-28.json",
+    "launch_web_server": false
+  },
+  "stats": {
+    "start_time": 1763636128.9508798,
+    "timestamp": 1763636180.2893858
+  }
+}
