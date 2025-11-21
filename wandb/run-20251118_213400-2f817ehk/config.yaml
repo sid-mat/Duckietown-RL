@@ -1,0 +1,160 @@
+wandb_version: 1
+
+_wandb:
+  value:
+    cli_version: 0.8.29
+    code_path: code/experiments/train-rllib.py
+    is_jupyter_run: false
+    python_version: 3.6.12
+    framework: tensorflow
+  desc: null
+num_workers:
+  value: 3
+  desc: null
+sample_batch_size:
+  value: 265
+  desc: null
+num_gpus:
+  value: 1
+  desc: null
+train_batch_size:
+  value: 2000
+  desc: null
+gamma:
+  value: 0.99
+  desc: null
+lr:
+  value: 0.0001
+  desc: null
+monitor:
+  value: false
+  desc: null
+evaluation_interval:
+  value: None
+  desc: null
+evaluation_num_episodes:
+  value: 2
+  desc: null
+seed:
+  value: 1234
+  desc: null
+lambda:
+  value: 0.95
+  desc: null
+sgd_minibatch_size:
+  value: 128
+  desc: null
+vf_loss_coeff:
+  value: 0.5
+  desc: null
+entropy_coeff:
+  value: 0.0
+  desc: null
+clip_param:
+  value: 0.2
+  desc: null
+vf_clip_param:
+  value: 0.2
+  desc: null
+grad_clip:
+  value: 0.5
+  desc: null
+env:
+  value: Duckietown
+  desc: null
+evaluation_config/monitor:
+  value: true
+  desc: null
+env_config/mode:
+  value: train
+  desc: null
+env_config/episode_max_steps:
+  value: 50
+  desc: null
+env_config/resized_input_shape:
+  value: (84, 84)
+  desc: null
+env_config/crop_image_top:
+  value: true
+  desc: null
+env_config/top_crop_divider:
+  value: 3
+  desc: null
+env_config/grayscale_image:
+  value: false
+  desc: null
+env_config/frame_stacking:
+  value: true
+  desc: null
+env_config/frame_stacking_depth:
+  value: 3
+  desc: null
+env_config/motion_blur:
+  value: false
+  desc: null
+env_config/action_type:
+  value: heading
+  desc: null
+env_config/reward_function:
+  value: posangle
+  desc: null
+env_config/distortion:
+  value: true
+  desc: null
+env_config/accepted_start_angle_deg:
+  value: 4
+  desc: null
+env_config/simulation_framerate:
+  value: 30
+  desc: null
+env_config/frame_skip:
+  value: 1
+  desc: null
+env_config/action_delay_ratio:
+  value: 0.0
+  desc: null
+env_config/training_map:
+  value: multimap1
+  desc: null
+env_config/domain_rand:
+  value: false
+  desc: null
+env_config/dynamics_rand:
+  value: false
+  desc: null
+env_config/camera_rand:
+  value: false
+  desc: null
+env_config/frame_repeating:
+  value: 0.0
+  desc: null
+env_config/spawn_obstacles:
+  value: false
+  desc: null
+env_config/spawn_forward_obstacle:
+  value: false
+  desc: null
+env_config/aido_wrapper:
+  value: false
+  desc: null
+env_config/experiment_name:
+  value: Debug
+  desc: null
+env_config/seed:
+  value: 0
+  desc: null
+env_config/wandb/project:
+  value: duckietown-rllib
+  desc: null
+env_config/obstacles/duckie/density:
+  value: 0.5
+  desc: null
+env_config/obstacles/duckie/static:
+  value: true
+  desc: null
+env_config/obstacles/duckiebot/density:
+  value: 0
+  desc: null
+env_config/obstacles/duckiebot/static:
+  value: false
+  desc: null

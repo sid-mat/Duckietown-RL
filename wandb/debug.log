@@ -1,0 +1,14 @@
+2025-11-20 10:55:30,250 DEBUG   MainThread:95361 [wandb_config.py:_load_defaults():119] no defaults not found in config-defaults.yaml
+2025-11-20 10:55:30,270 DEBUG   MainThread:95361 [meta.py:setup():97] code probe starting
+2025-11-20 10:55:30,271 DEBUG   MainThread:95361 [git_repo.py:repo():30] git repository is invalid
+2025-11-20 10:55:30,271 DEBUG   MainThread:95361 [meta.py:_setup_code_program():58] save program starting
+2025-11-20 10:55:30,271 DEBUG   MainThread:95361 [meta.py:_setup_code_program():60] save program starting: /home/duckie/Duckietown-RL/experiments/train-rllib.py
+2025-11-20 10:55:30,272 DEBUG   MainThread:95361 [meta.py:_setup_code_program():65] save program saved: /home/duckie/Duckietown-RL/wandb/run-20251120_105529-17mpmfrs/code/experiments/train-rllib.py
+2025-11-20 10:55:30,272 DEBUG   MainThread:95361 [meta.py:_setup_code_program():67] save program
+2025-11-20 10:55:30,272 DEBUG   MainThread:95361 [meta.py:setup():119] code probe done
+2025-11-20 10:55:30,281 DEBUG   MainThread:95361 [run_manager.py:__init__():541] Initialized sync for duckietown-rllib/17mpmfrs
+2025-11-20 10:55:30,285 INFO    MainThread:95361 [run_manager.py:wrap_existing_process():1144] wrapping existing process 95280
+2025-11-20 10:55:30,285 WARNING MainThread:95361 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2025-11-20 10:55:30,289 DEBUG   MainThread:95361 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2025-11-20 10:55:31,260 INFO    Thread-3  :95361 [run_manager.py:_on_file_modified():688] file/dir modified: /home/duckie/Duckietown-RL/wandb/run-20251120_105529-17mpmfrs/config.yaml
+2025-11-20 10:55:31,260 INFO    Thread-3  :95361 [17mpmfrs:run_manager.py:_on_file_modified():688] file/dir modified: /home/duckie/Duckietown-RL/wandb/run-20251120_105529-17mpmfrs/config.yaml

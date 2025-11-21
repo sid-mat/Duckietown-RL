@@ -1,0 +1,343 @@
+2025-11-18 20:58:56,529	ERROR syncer.py:39 -- Log sync requires rsync to be installed.
+== Status ==
+Memory usage on this node: 5.3/7.7 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 17/17 CPUs, 1/1 GPUs, 0.0/2.59 GiB heap, 0.0/0.88 GiB objects
+Result logdir: /home/duckie/Duckietown-RL/artifacts/Debug_0000/Nov18_20-58-53
+Number of trials: 1 (1 RUNNING)
++--------------+----------+-------+
+| Trial name   | status   | loc   |
+|--------------+----------+-------|
+| PPO          | RUNNING  |       |
++--------------+----------+-------+
+
+
+[2m[36m(pid=247)[0m INFO:geometry:version: 2.0.5
+[2m[36m(pid=247)[0m INFO:dt-world:duckietown-world 6.0.24
+[2m[36m(pid=247)[0m INFO:commons:version: 6.1.5
+[2m[36m(pid=247)[0m INFO:typing:version: 6.1.8
+[2m[36m(pid=247)[0m 2025-11-18 20:59:03,582	INFO trainer.py:420 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
+[2m[36m(pid=247)[0m 2025-11-18 20:59:03,583	INFO trainer.py:580 -- Current log_level is WARN. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+[2m[36m(pid=247)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/rllib/utils/from_config.py:134: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+[2m[36m(pid=247)[0m   obj = yaml.load(type_)
+[2m[36m(pid=245)[0m INFO:geometry:version: 2.0.5
+[2m[36m(pid=245)[0m INFO:dt-world:duckietown-world 6.0.24
+[2m[36m(pid=245)[0m INFO:commons:version: 6.1.5
+[2m[36m(pid=245)[0m INFO:typing:version: 6.1.8
+2025-11-18 20:59:39,881	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=243, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.29 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.22GiB	ray::PPO.__init__()
+462	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+459	0.27GiB	ray::IDLE
+458	0.26GiB	ray::IDLE
+502	0.26GiB	ray::IDLE
+457	0.26GiB	ray::IDLE
+461	0.26GiB	ray::IDLE
+456	0.25GiB	ray::IDLE
+463	0.25GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:40,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=246, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.31 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.22GiB	ray::PPO.__init__()
+462	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+459	0.27GiB	ray::IDLE
+458	0.27GiB	ray::IDLE
+502	0.26GiB	ray::IDLE
+457	0.26GiB	ray::IDLE
+461	0.26GiB	ray::IDLE
+456	0.26GiB	ray::IDLE
+463	0.25GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:40,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=239, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.31 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.22GiB	ray::PPO.__init__()
+462	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+459	0.27GiB	ray::IDLE
+458	0.27GiB	ray::IDLE
+502	0.26GiB	ray::IDLE
+457	0.26GiB	ray::IDLE
+461	0.26GiB	ray::IDLE
+456	0.26GiB	ray::IDLE
+463	0.25GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:40,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=241, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.31 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.22GiB	ray::PPO.__init__()
+462	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+459	0.27GiB	ray::IDLE
+458	0.27GiB	ray::IDLE
+502	0.26GiB	ray::IDLE
+457	0.26GiB	ray::IDLE
+461	0.26GiB	ray::IDLE
+456	0.26GiB	ray::IDLE
+463	0.25GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:40,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=240, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.31 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.22GiB	ray::PPO.__init__()
+462	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+459	0.27GiB	ray::IDLE
+458	0.27GiB	ray::IDLE
+502	0.26GiB	ray::IDLE
+457	0.26GiB	ray::IDLE
+461	0.26GiB	ray::IDLE
+456	0.26GiB	ray::IDLE
+463	0.25GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:40,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=242, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.32 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.22GiB	ray::PPO.__init__()
+462	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+459	0.27GiB	ray::IDLE
+458	0.27GiB	ray::IDLE
+502	0.26GiB	ray::IDLE
+457	0.26GiB	ray::IDLE
+461	0.26GiB	ray::IDLE
+456	0.26GiB	ray::IDLE
+463	0.25GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:40,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=462, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.36 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.22GiB	ray::PPO.__init__()
+462	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+457	0.27GiB	ray::IDLE
+502	0.27GiB	ray::IDLE
+456	0.26GiB	ray::IDLE
+461	0.26GiB	ray::IDLE
+463	0.26GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:40,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=460, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.45 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.23GiB	ray::PPO.__init__()
+460	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+502	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+463	0.27GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:41,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=458, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.45 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.23GiB	ray::PPO.__init__()
+460	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+502	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+463	0.27GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:41,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=457, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.48 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.24GiB	ray::PPO.__init__()
+460	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+502	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+463	0.27GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:41,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=459, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.48 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.24GiB	ray::PPO.__init__()
+502	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+463	0.27GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:41,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=502, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.47 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.24GiB	ray::PPO.__init__()
+502	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+463	0.27GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:41,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=456, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.48 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.24GiB	ray::PPO.__init__()
+502	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+463	0.28GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:41,892	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=461, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.5 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.24GiB	ray::PPO.__init__()
+502	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+463	0.28GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+2025-11-18 20:59:41,893	ERROR worker.py:998 -- Possible unhandled error from worker: [36mray::IDLE[39m (pid=463, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.49 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+247	1.24GiB	ray::PPO.__init__()
+502	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+463	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+456	0.28GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.
+[2m[36m(pid=247)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Trying to monitor an environment which has no 'spec' set. This usually means you did not create it via 'gym.make', and is recommended only for advanced users.[0m
+[2m[36m(pid=247)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=247)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/rllib/utils/from_config.py:134: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+[2m[36m(pid=247)[0m   obj = yaml.load(type_)
+[2m[36m(pid=247)[0m 2025-11-18 20:59:43,479	INFO trainable.py:178 -- _setup took 39.897 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2025-11-18 20:59:43,589	ERROR trial_runner.py:513 -- Trial PPO: Error processing event.
+Traceback (most recent call last):
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/tune/trial_runner.py", line 459, in _process_trial
+    result = self.trial_executor.fetch_result(trial)
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/tune/ray_trial_executor.py", line 377, in fetch_result
+    result = ray.get(trial_future[0], DEFAULT_GET_TIMEOUT)
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/worker.py", line 1504, in get
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(RayOutOfMemoryError): [36mray::PPO[39m (pid=247, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 438, in ray._raylet.execute_task
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/memory_monitor.py", line 122, in raise_if_low_memory
+    self.error_threshold))
+ray.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node fd8a3405d77f is used (7.62 / 7.67 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+683	1.29GiB	ray::PPO
+247	1.29GiB	ray::PPO
+502	0.28GiB	ray::IDLE
+460	0.28GiB	ray::IDLE
+458	0.28GiB	ray::IDLE
+463	0.28GiB	ray::IDLE
+459	0.28GiB	ray::IDLE
+462	0.28GiB	ray::IDLE
+461	0.28GiB	ray::IDLE
+457	0.28GiB	ray::IDLE
+
+In addition, up to 0.06 GiB of shared memory is currently being used by the Ray object store. You can set the object store size with the `object_store_memory` parameter when starting Ray, and the max Redis size with `redis_max_memory`. Note that Ray assumes all system memory is available for use by workers. If your system has other applications running, you should manually set these memory limits to a lower value.

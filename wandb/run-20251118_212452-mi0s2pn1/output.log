@@ -1,0 +1,57 @@
+2025-11-18 21:24:54,656	ERROR syncer.py:39 -- Log sync requires rsync to be installed.
+== Status ==
+Memory usage on this node: 2.6/7.7 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 3/4 CPUs, 1/1 GPUs, 0.0/3.76 GiB heap, 0.0/1.27 GiB objects
+Result logdir: /home/duckie/Duckietown-RL/artifacts/Debug_0000/Nov18_21-24-51
+Number of trials: 1 (1 RUNNING)
++--------------+----------+-------+
+| Trial name   | status   | loc   |
+|--------------+----------+-------|
+| PPO          | RUNNING  |       |
++--------------+----------+-------+
+
+
+[2m[36m(pid=835)[0m INFO:geometry:version: 2.0.5
+[2m[36m(pid=835)[0m INFO:dt-world:duckietown-world 6.0.24
+[2m[36m(pid=835)[0m INFO:commons:version: 6.1.5
+[2m[36m(pid=835)[0m INFO:typing:version: 6.1.8
+[2m[36m(pid=835)[0m 2025-11-18 21:25:01,477	INFO trainer.py:420 -- Tip: set 'eager': true or the --eager flag to enable TensorFlow eager execution
+[2m[36m(pid=835)[0m 2025-11-18 21:25:01,478	INFO trainer.py:580 -- Current log_level is WARN. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+[2m[36m(pid=835)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/rllib/utils/from_config.py:134: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+[2m[36m(pid=835)[0m   obj = yaml.load(type_)
+[2m[36m(pid=833)[0m INFO:geometry:version: 2.0.5
+[2m[36m(pid=834)[0m INFO:geometry:version: 2.0.5
+[2m[36m(pid=833)[0m INFO:dt-world:duckietown-world 6.0.24
+[2m[36m(pid=833)[0m INFO:commons:version: 6.1.5
+[2m[36m(pid=834)[0m INFO:dt-world:duckietown-world 6.0.24
+[2m[36m(pid=834)[0m INFO:commons:version: 6.1.5
+[2m[36m(pid=833)[0m INFO:typing:version: 6.1.8
+[2m[36m(pid=834)[0m INFO:typing:version: 6.1.8
+[2m[36m(pid=835)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Trying to monitor an environment which has no 'spec' set. This usually means you did not create it via 'gym.make', and is recommended only for advanced users.[0m
+[2m[36m(pid=835)[0m   warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[2m[36m(pid=835)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/rllib/utils/from_config.py:134: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+[2m[36m(pid=835)[0m   obj = yaml.load(type_)
+[2m[36m(pid=835)[0m 2025-11-18 21:25:31,372	INFO trainable.py:178 -- _setup took 29.894 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+[2m[36m(pid=833)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/rllib/utils/from_config.py:134: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+[2m[36m(pid=833)[0m   obj = yaml.load(type_)
+[2m[36m(pid=833)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/geometry/poses.py:274: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+[2m[36m(pid=833)[0m   linear = np.array(linear)
+[2m[36m(pid=834)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/rllib/utils/from_config.py:134: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+[2m[36m(pid=834)[0m   obj = yaml.load(type_)
+[2m[36m(pid=834)[0m /home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/geometry/poses.py:274: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+[2m[36m(pid=834)[0m   linear = np.array(linear)
+2025-11-18 21:26:18,023	ERROR trial_runner.py:513 -- Trial PPO: Error processing event.
+Traceback (most recent call last):
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/tune/trial_runner.py", line 459, in _process_trial
+    result = self.trial_executor.fetch_result(trial)
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/tune/ray_trial_executor.py", line 377, in fetch_result
+    result = ray.get(trial_future[0], DEFAULT_GET_TIMEOUT)
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/worker.py", line 1504, in get
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(TypeError): [36mray::PPO.train()[39m (pid=835, ip=172.17.0.2)
+  File "python/ray/_raylet.pyx", line 452, in ray._raylet.execute_task
+  File "python/ray/_raylet.pyx", line 430, in ray._raylet.execute_task.function_executor
+  File "/home/duckie/miniconda3/envs/dtaido5/lib/python3.6/site-packages/ray/rllib/agents/trainer.py", line 512, in train
+    and self._iteration % self.config["evaluation_interval"] == 0):
+TypeError: unsupported operand type(s) for %: 'int' and 'str'
